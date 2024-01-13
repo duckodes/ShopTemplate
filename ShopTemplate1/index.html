@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopTemplate1</title>
+    <link rel="stylesheet" href="https://lib.duckode.com/css/font-face.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/styleUNI.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app d-flex f-col">
+        <header>
+            <div class="title d-flex f-center f-col">
+                <span>Shop Template1</span>
+                <div class="list d-flex f-row select-n">
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div class="cart">🛒</div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="topic d-flex f-center">
+                <span>Weekly recommendations</span>
+            </div>
+            <div class="card">
+                <div class="card-area"></div>
+            </div>
+        </main>
+        <footer class="d-flex f-center f-col">
+            <p>&copy;2024 ShopTemplate1</p>
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <span>-</span>
+                <a href="#">Terms of Use</a>
+                <span>-</span>
+                <a href="#">FAQ</a>
+            </nav>
+        </footer>
+    </div>
+    <script src="js/clickutils.js"></script>
+    <script src="js/card.js"></script>
+    <script>
+        card.init('Product A', '100$', 'img/Product_500x_72ppi.png', '#');
+        card.init('Product B', '100$', 'img/Product_500x_72ppi.png', '#1');
+        card.init('Product C', '100$', 'img/Product_500x_72ppi.png', '#2');
+    </script>
+    <script src="js/background.js"></script>
+</body>
+
+</html>

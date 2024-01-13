@@ -1,0 +1,105 @@
+.card {
+    width: auto;
+    align-self: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.card .card-area {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card .card-area .card-base {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #f0f0f0;
+    box-shadow: 5px 5px 10px #00000050;
+    width: 250px;
+    min-width: 0px;
+    max-width: 250px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+}
+
+.card .card-area .card-base:hover {
+    box-shadow: 5px 5px 10px #00000090;
+}
+
+.card .card-area .card-base::before {
+    content: "";
+    position: relative;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to left, #00000000, #000000aa);
+    border-image-slice: 1;
+    transition: all 500ms ease-in-out;
+    border-radius: 8px;
+    width: 0;
+    margin-left: -100%;
+}
+
+.card .card-area .card-base:hover::before {
+    content: "";
+    position: relative;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #00000000, #000000aa);
+    border-image-slice: 1;
+    width: 200%;
+    margin-left: 0%;
+}
+
+.card .card-area .card-base span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 25px;
+}
+
+.card .card-area .card-base:hover span {
+    -webkit-line-clamp: 999;
+}
+
+.card .card-area .card-base .card-btn-base {
+    display: flex;
+}
+
+.card .card-area .card-base .card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    width: 100%;
+}
+
+.card .card-area .card-base .card-btn {
+    width: auto;
+    font-family: "Poiret_One";
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    background: #f0f0f0;
+    box-shadow: 5px 5px 10px #00000020;
+    padding: 10px;
+    text-align: right;
+}
+
+.card .card-area .card-base .card-btn:hover {
+    box-shadow: 5px 5px 15px #00000030;
+    text-shadow: 0px 0px 10px #00000050;
+}
+
+.card .card-area .card-base .card-btn:active {
+    box-shadow: 2px 2px 4px #00000050;
+}
